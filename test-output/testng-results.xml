@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="3" ignored="3" total="12" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-07T16:08:06 IST" name="NRI Cross Browser Suite" finished-at="2026-11-07T16:10:51 IST" duration-ms="165558">
+    <groups>
+    </groups>
+    <test started-at="2026-11-07T16:08:06 IST" name="Chrome Execution" finished-at="2026-11-07T16:10:00 IST" duration-ms="113850">
+      <class name="testClasses.CreateNRISavingAccount">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:08:07 IST" name="setUp" finished-at="2026-11-07T16:08:12 IST" duration-ms="5814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="createNRISavingAccount(java.util.HashMap)[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:08:12 IST" name="createNRISavingAccount" data-provider="getData" finished-at="2026-11-07T16:08:43 IST" duration-ms="30136" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Naruto, lastName=Naruto, overSeasCountry=American Samoa, mobNo=9876543211, gmailId=naruto.test@example.com, confirmPass=NarutoTest@123, pass=NarutoTest@123, middleName=Uzumaki, title=Mr.}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Title']/parent::div/div/select"}
+  (Session info: chrome=158.0.8127.18)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5a4d2ed0159cb1be5d2b795349148a2b, findElement {using=xpath, value=//label[text()='Title']/parent::div/div/select}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 158.0.8127.18, chrome: {chromedriverVersion: 158.0.8127.18 (6449d9f9a6a9..., userDataDir: C:\Users\sanke\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51572}, goog:processID: 24440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 158.0.8127.18, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a4d2ed0159cb1be5d2b795349148a2b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Title']/parent::div/div/select"}
+  (Session info: chrome=158.0.8127.18)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5a4d2ed0159cb1be5d2b795349148a2b, findElement {using=xpath, value=//label[text()='Title']/parent::div/div/select}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 158.0.8127.18, chrome: {chromedriverVersion: 158.0.8127.18 (6449d9f9a6a9..., userDataDir: C:\Users\sanke\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51572}, goog:processID: 24440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 158.0.8127.18, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a4d2ed0159cb1be5d2b795349148a2b
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:252)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:667)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:432)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:426)
+at com.epam.healenium.processor.FindElementProcessor.execute(FindElementProcessor.java:23)
+at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:42)
+at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:63)
+at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy14.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
+at utill.AbstractComponant.selectDropDown(AbstractComponant.java:171)
+at pomclasses.OnlineApplicationFormOfNRIAccount.fillThePrestigeAccountForm(OnlineApplicationFormOfNRIAccount.java:78)
+at testClasses.CreateNRISavingAccount.createNRISavingAccount(CreateNRISavingAccount.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNRISavingAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:08:43 IST" name="tearDown" finished-at="2026-11-07T16:08:44 IST" duration-ms="1436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:08:44 IST" name="setUp" finished-at="2026-11-07T16:08:45 IST" duration-ms="1441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createNRISavingAccount(java.util.HashMap)[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:08:45 IST" name="createNRISavingAccount" data-provider="getData" finished-at="2026-11-07T16:09:07 IST" duration-ms="21784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Naruto, lastName=Naruto, overSeasCountry=American Samoa, mobNo=9876543211, gmailId=naruto.test@example.com, confirmPass=NarutoTest@123, pass=NarutoTest@123, middleName=Uzumaki, title=Mr.}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNRISavingAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:09:07 IST" name="tearDown" finished-at="2026-11-07T16:09:08 IST" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:09:08 IST" name="setUp" finished-at="2026-11-07T16:09:09 IST" duration-ms="901" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createNRISavingAccount(java.util.HashMap)[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:09:09 IST" name="createNRISavingAccount" data-provider="getData" finished-at="2026-11-07T16:09:34 IST" duration-ms="25480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Sakura, lastName=Sakura, overSeasCountry=Singapore, mobNo=9876543210, gmailId=sakura.test@example.com, confirmPass=SakuraTest@123, pass=SakuraTest@123, middleName=Haruno, title=Ms.}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNRISavingAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:09:34 IST" name="tearDown" finished-at="2026-11-07T16:09:35 IST" duration-ms="1165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:09:35 IST" name="setUp" finished-at="2026-11-07T16:09:37 IST" duration-ms="1320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createNRISavingAccount(java.util.HashMap)[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:09:37 IST" name="createNRISavingAccount" data-provider="getData" finished-at="2026-11-07T16:09:59 IST" duration-ms="22545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Hinata, lastName=Hinata, overSeasCountry=Australia, mobNo=9123456780, gmailId=hinata.test@example.com, confirmPass=HinataTest@123, pass=HinataTest@123, middleName=Hyuga, title=Mrs.}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNRISavingAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.CreateNRISavingAccount@63f8276e]" started-at="2026-11-07T16:09:59 IST" name="tearDown" finished-at="2026-11-07T16:10:00 IST" duration-ms="567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClasses.CreateNRISavingAccount -->
+    </test> <!-- Chrome Execution -->
+    <test started-at="2026-11-07T16:08:06 IST" name="Edge Execution" finished-at="2026-11-07T16:10:51 IST" duration-ms="165558">
+      <class name="testClasses.CreateNRISavingAccount">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:08:07 IST" name="setUp" finished-at="2026-11-07T16:08:14 IST" duration-ms="7560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createNRISavingAccount(java.util.HashMap)[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:08:14 IST" name="createNRISavingAccount" data-provider="getData" finished-at="2026-11-07T16:08:39 IST" duration-ms="24487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Naruto, lastName=Naruto, overSeasCountry=American Samoa, mobNo=9876543211, gmailId=naruto.test@example.com, confirmPass=NarutoTest@123, pass=NarutoTest@123, middleName=Uzumaki, title=Mr.}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNRISavingAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:08:39 IST" name="tearDown" finished-at="2026-11-07T16:08:39 IST" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:08:39 IST" name="setUp" finished-at="2026-11-07T16:08:41 IST" duration-ms="1347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="createNRISavingAccount(java.util.HashMap)[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:08:41 IST" name="createNRISavingAccount" data-provider="getData" finished-at="2026-11-07T16:09:08 IST" duration-ms="27359" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Sakura, lastName=Sakura, overSeasCountry=Singapore, mobNo=9876543210, gmailId=sakura.test@example.com, confirmPass=SakuraTest@123, pass=SakuraTest@123, middleName=Haruno, title=Ms.}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Title']/parent::div/div/select"}
+  (Session info: MicrosoftEdge=157.0.4341.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [743a8c980eefeb42285ac4fa2adc7997, findElement {using=xpath, value=//label[text()='Title']/parent::div/div/select}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 157.0.4341.42, fedcm:accounts: true, goog:processID: 10916, ms:edgeOptions: {debuggerAddress: localhost:52306}, msedge: {msedgedriverVersion: 157.0.4341.42 (7b1486be4607..., userDataDir: C:\Users\sanke\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.4341.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 743a8c980eefeb42285ac4fa2adc7997]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Title']/parent::div/div/select"}
+  (Session info: MicrosoftEdge=157.0.4341.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [743a8c980eefeb42285ac4fa2adc7997, findElement {using=xpath, value=//label[text()='Title']/parent::div/div/select}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 157.0.4341.42, fedcm:accounts: true, goog:processID: 10916, ms:edgeOptions: {debuggerAddress: localhost:52306}, msedge: {msedgedriverVersion: 157.0.4341.42 (7b1486be4607..., userDataDir: C:\Users\sanke\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.4341.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 743a8c980eefeb42285ac4fa2adc7997
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:252)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:667)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:432)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:426)
+at com.epam.healenium.processor.FindElementProcessor.execute(FindElementProcessor.java:23)
+at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:42)
+at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:63)
+at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy14.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
+at utill.AbstractComponant.selectDropDown(AbstractComponant.java:171)
+at pomclasses.OnlineApplicationFormOfNRIAccount.fillThePrestigeAccountForm(OnlineApplicationFormOfNRIAccount.java:78)
+at testClasses.CreateNRISavingAccount.createNRISavingAccount(CreateNRISavingAccount.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNRISavingAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:09:08 IST" name="tearDown" finished-at="2026-11-07T16:09:10 IST" duration-ms="2184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:09:10 IST" name="setUp" finished-at="2026-11-07T16:09:12 IST" duration-ms="1717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createNRISavingAccount(java.util.HashMap)[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:09:12 IST" name="createNRISavingAccount" data-provider="getData" finished-at="2026-11-07T16:09:33 IST" duration-ms="21477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Sakura, lastName=Sakura, overSeasCountry=Singapore, mobNo=9876543210, gmailId=sakura.test@example.com, confirmPass=SakuraTest@123, pass=SakuraTest@123, middleName=Haruno, title=Ms.}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNRISavingAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:09:33 IST" name="tearDown" finished-at="2026-11-07T16:09:34 IST" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:09:34 IST" name="setUp" finished-at="2026-11-07T16:09:35 IST" duration-ms="1159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="createNRISavingAccount(java.util.HashMap)[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:09:35 IST" name="createNRISavingAccount" data-provider="getData" finished-at="2026-11-07T16:10:02 IST" duration-ms="27054" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Hinata, lastName=Hinata, overSeasCountry=Australia, mobNo=9123456780, gmailId=hinata.test@example.com, confirmPass=HinataTest@123, pass=HinataTest@123, middleName=Hyuga, title=Mrs.}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Title']/parent::div/div/select"}
+  (Session info: MicrosoftEdge=157.0.4341.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [8891d7ba7d65226f3a015711ffe928ff, findElement {using=xpath, value=//label[text()='Title']/parent::div/div/select}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 157.0.4341.42, fedcm:accounts: true, goog:processID: 26464, ms:edgeOptions: {debuggerAddress: localhost:60670}, msedge: {msedgedriverVersion: 157.0.4341.42 (7b1486be4607..., userDataDir: C:\Users\sanke\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.4341.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8891d7ba7d65226f3a015711ffe928ff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Title']/parent::div/div/select"}
+  (Session info: MicrosoftEdge=157.0.4341.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [8891d7ba7d65226f3a015711ffe928ff, findElement {using=xpath, value=//label[text()='Title']/parent::div/div/select}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 157.0.4341.42, fedcm:accounts: true, goog:processID: 26464, ms:edgeOptions: {debuggerAddress: localhost:60670}, msedge: {msedgedriverVersion: 157.0.4341.42 (7b1486be4607..., userDataDir: C:\Users\sanke\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.4341.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8891d7ba7d65226f3a015711ffe928ff
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:252)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:667)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:432)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:426)
+at com.epam.healenium.processor.FindElementProcessor.execute(FindElementProcessor.java:23)
+at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:42)
+at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:63)
+at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy14.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
+at utill.AbstractComponant.selectDropDown(AbstractComponant.java:171)
+at pomclasses.OnlineApplicationFormOfNRIAccount.fillThePrestigeAccountForm(OnlineApplicationFormOfNRIAccount.java:78)
+at testClasses.CreateNRISavingAccount.createNRISavingAccount(CreateNRISavingAccount.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNRISavingAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:10:02 IST" name="tearDown" finished-at="2026-11-07T16:10:03 IST" duration-ms="1173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:10:03 IST" name="setUp" finished-at="2026-11-07T16:10:04 IST" duration-ms="876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createNRISavingAccount(java.util.HashMap)[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:10:04 IST" name="createNRISavingAccount" data-provider="getData" finished-at="2026-11-07T16:10:50 IST" duration-ms="45854" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Hinata, lastName=Hinata, overSeasCountry=Australia, mobNo=9123456780, gmailId=hinata.test@example.com, confirmPass=HinataTest@123, pass=HinataTest@123, middleName=Hyuga, title=Mrs.}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Title']/parent::div/div/select"}
+  (Session info: MicrosoftEdge=157.0.4341.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [956a025ae1ec0a01f820c72bf3a10f8a, findElement {using=xpath, value=//label[text()='Title']/parent::div/div/select}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 157.0.4341.42, fedcm:accounts: true, goog:processID: 7920, ms:edgeOptions: {debuggerAddress: localhost:50834}, msedge: {msedgedriverVersion: 157.0.4341.42 (7b1486be4607..., userDataDir: C:\Users\sanke\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.4341.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 956a025ae1ec0a01f820c72bf3a10f8a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Title']/parent::div/div/select"}
+  (Session info: MicrosoftEdge=157.0.4341.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [956a025ae1ec0a01f820c72bf3a10f8a, findElement {using=xpath, value=//label[text()='Title']/parent::div/div/select}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 157.0.4341.42, fedcm:accounts: true, goog:processID: 7920, ms:edgeOptions: {debuggerAddress: localhost:50834}, msedge: {msedgedriverVersion: 157.0.4341.42 (7b1486be4607..., userDataDir: C:\Users\sanke\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.4341.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 956a025ae1ec0a01f820c72bf3a10f8a
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:252)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:667)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:432)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:426)
+at com.epam.healenium.processor.FindElementProcessor.execute(FindElementProcessor.java:23)
+at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:42)
+at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:63)
+at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy14.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
+at utill.AbstractComponant.selectDropDown(AbstractComponant.java:171)
+at pomclasses.OnlineApplicationFormOfNRIAccount.fillThePrestigeAccountForm(OnlineApplicationFormOfNRIAccount.java:78)
+at testClasses.CreateNRISavingAccount.createNRISavingAccount(CreateNRISavingAccount.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNRISavingAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.CreateNRISavingAccount@626c44e7]" started-at="2026-11-07T16:10:50 IST" name="tearDown" finished-at="2026-11-07T16:10:51 IST" duration-ms="1214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClasses.CreateNRISavingAccount -->
+    </test> <!-- Edge Execution -->
+  </suite> <!-- NRI Cross Browser Suite -->
+</testng-results>
