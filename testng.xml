@@ -10,8 +10,7 @@
         <listener class-name="testComponant.RetryListener"/>
     </listeners>
 
-    <test name="Chrome Execution">    
-    
+    <test name="Chrome Execution">        
         <parameter name="browserName" value="chrome"/>
         <classes>
             <class name="testClasses.CreateNRISavingAccount"/>

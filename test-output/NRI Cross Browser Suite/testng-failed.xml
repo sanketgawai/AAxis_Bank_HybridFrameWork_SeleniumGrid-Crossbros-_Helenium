@@ -5,8 +5,8 @@
     <listener class-name="testComponant.Listeners"/>
     <listener class-name="testComponant.RetryListener"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="Chrome Execution(failed)">
-    <parameter name="browserName" value="chrome"/>
+  <test thread-count="2" parallel="tests" name="Edge Execution(failed)">
+    <parameter name="browserName" value="edge"/>
     <classes>
       <class name="testClasses.CreateNRISavingAccount">
         <methods>
@@ -16,17 +16,17 @@
         </methods>
       </class> <!-- testClasses.CreateNRISavingAccount -->
     </classes>
-  </test> <!-- Chrome Execution(failed) -->
-  <test thread-count="2" parallel="tests" name="Edge Execution(failed)">
-    <parameter name="browserName" value="edge"/>
+  </test> <!-- Edge Execution(failed) -->
+  <test thread-count="2" parallel="tests" name="Chrome Execution(failed)">
+    <parameter name="browserName" value="chrome"/>
     <classes>
       <class name="testClasses.CreateNRISavingAccount">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="createNRISavingAccount" invocation-numbers="1 2"/>
+          <include name="createNRISavingAccount" invocation-numbers="0 2"/>
         </methods>
       </class> <!-- testClasses.CreateNRISavingAccount -->
     </classes>
-  </test> <!-- Edge Execution(failed) -->
+  </test> <!-- Chrome Execution(failed) -->
 </suite> <!-- Failed suite [NRI Cross Browser Suite] -->
